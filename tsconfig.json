@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "allowJs": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    /*add*/
+    "baseUrl": ".",
+    "paths": {
+      "@/*":[
+        "src/*"
+      ]
+    },
+    // "types": ["element-plus/global"]
+  },
+  "include": [
+    "src/**/*", 
+    "src/**/*.d.ts", 
+    "src/**/*.tsx", 
+    "src/**/*.vue", 
+    ".eslintrc.cjs", 
+    "vite.config.ts", 
+    "types/**/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

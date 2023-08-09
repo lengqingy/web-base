@@ -1,0 +1,51 @@
+{
+  "name": "hxwc-icit",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode base",
+    "f2e": "vite --mode f2e",
+    "ts:check": "vue-tsc --noEmit",
+    "build:dev": "vite build --mode dev",
+    "build:f2e": "vite build --mode f2e",
+    "build:test": "npm run ts:check && vite build --mode test",
+    "build:pro": "vite build --mode pro",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.8",
+    "pinia": "^2.1.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.9",
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-config-standard-with-typescript": "latest",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "latest",
+    "prettier": "^3.0.0",
+    "qs": "^6.11.2",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "terser": "^5.19.2",
+    "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-prerender": "^1.0.8",
+    "vue-i18n": "^9.2.2",
+    "vue-tsc": "^1.8.5"
+  }
+}
